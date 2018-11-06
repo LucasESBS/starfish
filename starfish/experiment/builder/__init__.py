@@ -15,8 +15,7 @@ from starfish.experiment.builder.orderediterator import join_dimension_sizes, or
 from starfish.experiment.version import CURRENT_VERSION
 from starfish.types import Coordinates, Indices
 from .defaultproviders import RandomNoiseTile, tile_fetcher_factory
-from .providers import FetchedTile, TileFetcher
-
+from .providers import TileFetcher
 
 AUX_IMAGE_NAMES = {
     'nuclei',

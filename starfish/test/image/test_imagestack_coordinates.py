@@ -3,8 +3,9 @@ from typing import Mapping, Tuple, Union
 import numpy as np
 from slicedimage import ImageFormat
 
-from starfish.experiment.builder import FetchedTile, tile_fetcher_factory
+from starfish.experiment.builder import tile_fetcher_factory
 from starfish.imagestack.imagestack import ImageStack
+from starfish.imagestack.providers import FetchedTile
 from starfish.types import Coordinates, Indices, Number
 
 NUM_ROUND = 8

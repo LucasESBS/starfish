@@ -11,8 +11,8 @@ from skimage.io import imread
 from slicedimage import ImageFormat
 
 from starfish import Codebook
-from starfish.experiment.builder import FetchedTile, TileFetcher
-from starfish.experiment.builder import write_experiment_json
+from starfish.experiment.builder import TileFetcher, write_experiment_json
+from starfish.imagestack.providers import FetchedTile
 from starfish.types import Coordinates, Features, Indices, Number
 from starfish.util.argparse import FsExistsType
 

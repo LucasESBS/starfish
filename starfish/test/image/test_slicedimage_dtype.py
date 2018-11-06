@@ -7,8 +7,9 @@ from skimage import img_as_float32
 from slicedimage import ImageFormat
 
 from starfish.errors import DataFormatWarning
-from starfish.experiment.builder import FetchedTile, TileFetcher
+from starfish.experiment.builder import TileFetcher
 from starfish.imagestack.imagestack import ImageStack
+from starfish.imagestack.providers import FetchedTile
 from starfish.types import Coordinates, Number
 
 NUM_ROUND = 2

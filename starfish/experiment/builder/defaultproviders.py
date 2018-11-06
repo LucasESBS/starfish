@@ -9,8 +9,9 @@ from slicedimage import (
     ImageFormat,
 )
 
+from starfish.imagestack.providers import FetchedTile
 from starfish.types import Coordinates, Number
-from .providers import FetchedTile, TileFetcher
+from .providers import TileFetcher
 
 
 class RandomNoiseTile(FetchedTile):

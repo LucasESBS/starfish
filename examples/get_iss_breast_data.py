@@ -6,7 +6,8 @@ import numpy as np
 from skimage.io import imread
 from slicedimage import ImageFormat
 
-from starfish.experiment.builder import FetchedTile, TileFetcher, write_experiment_json
+from starfish.experiment.builder import TileFetcher, write_experiment_json
+from starfish.imagestack.providers import FetchedTile
 from starfish.types import Coordinates, Indices, Number
 from starfish.util.argparse import FsExistsType
 
