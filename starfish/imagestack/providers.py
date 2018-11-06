@@ -66,3 +66,15 @@ class FetchedTile:
             The image data
         """
         raise NotImplementedError()
+
+
+class TileFetcher:
+    """
+    This is the contract for providing the image data for constructing a :class:`ImageStack`.
+    """
+    def get_tile(self, r: int, ch: int, z: int) -> FetchedTile:
+        """
+        Given r, ch, and z, return an instance of a :class:`.FetchedImage` that can be queried for
+        the image data.
+        """
+        raise NotImplementedError()
